@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
-import { useTypeSelector } from '../hooks/useTypeSelector';
+// import { useTypeSelector } from '../hooks/useTypeSelector';
 import { MaskedTextInput } from 'react-native-mask-text';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import Login_style from '../styles/Login';
 
-function Login () {
-    const { users, loading, error } = useTypeSelector(state => state.user);
+function Login() {
+    // const { users, loading, error } = useTypeSelector(state => state.user);
     const [password, viewPassword] = useState(false);
 
     const [form, setForm] = React.useState({
